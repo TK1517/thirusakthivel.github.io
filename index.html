@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Animate.css for entry animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="animate__animated animate__fadeInDown">
+    <nav>
+      <div class="logo">Your Name</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero animate__animated animate__fadeIn">
+    <h1>Hi, I'm <span>Your Name</span></h1>
+    <p>Freelancer | Web Developer | Designer</p>
+    <a href="#contact" class="btn animate__animated animate__pulse animate__infinite">Hire Me</a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate developer with experience in creating stunning websites and applications.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills" data-aos="zoom-in">
+    <h2>My Skills</h2>
+    <div class="skill" data-aos="fade-right">
+      <p>HTML</p>
+      <div class="skill-bar"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill" data-aos="fade-right" data-aos-delay="100">
+      <p>CSS</p>
+      <div class="skill-bar"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill" data-aos="fade-right" data-aos-delay="200">
+      <p>JavaScript</p>
+      <div class="skill-bar"><span style="width: 75%"></span></div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume" class="resume" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Experience and education timeline goes here.</p>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="service-card" data-aos="flip-left">
+      <h3>Web Development</h3>
+      <p>I build responsive and modern websites.</p>
+    </div>
+    <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+      <h3>UI/UX Design</h3>
+      <p>Designing engaging and user-friendly interfaces.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <p>© 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
