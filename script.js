@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -8,8 +8,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Initialize AOS animations
+// Initialize AOS
 AOS.init({
-  duration: 1000, // animation duration in ms
-  once: true      // animation happens only once
+  duration: 1000,
+  once: true
+});
+
+// Dark / Light mode toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
