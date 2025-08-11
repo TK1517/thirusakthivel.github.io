@@ -169,6 +169,43 @@ h2 {
   color: var(--accent-color);
 }
 
+/* Experience Section - No Indentation */
+.experience-section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 198, 215, 0.2);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-item .year {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  margin: 8px 0;
+  color: var(--text-color);
+}
+
+.experience-item p {
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
 .contact-section {
   text-align: center;
   padding: 50px 20px;
@@ -208,16 +245,9 @@ h2 {
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 
-
 footer {
   background: var(--text-color);
   color: var(--bg-color);
   text-align: center;
   padding: 1rem;
 }
-
-
-
-
-
-
