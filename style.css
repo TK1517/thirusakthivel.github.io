@@ -169,10 +169,49 @@ h2 {
   color: var(--accent-color);
 }
 
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.whatsapp { background: #25d366; }
+.linkedin  { background: #0077b5; }
+.email     { background: #ff9900; }
+
+.social-btn:hover {
+  opacity: 0.8;
+}
+
+
 footer {
   background: var(--text-color);
   color: var(--bg-color);
   text-align: center;
   padding: 1rem;
 }
+
 
