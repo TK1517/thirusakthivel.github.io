@@ -20,11 +20,13 @@ body {
 }
 
 header {
-  background: var(--text-color);
+  background: linear-gradient(90deg, #2575fc, #6a11cb); /* gradient */
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 0 0 20px 20px; /* curved bottom corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* soft shadow for depth */
 }
 
 nav {
@@ -34,7 +36,7 @@ nav {
 }
 
 .logo {
-  color: var(--bg-color);
+  color: white; /* works well with gradient */
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -49,13 +51,11 @@ nav {
 }
 
 .nav-links a {
-  color: var(--bg-color);
-  text-decoration: none;
-  transition: color 0.3s;
+  color: white; /* ensures text is visible */
 }
 
 .nav-links a:hover {
-  color: var(--secondary-color);
+  color: #ffd700; /* bright hover color */
 }
 
 .theme-toggle {
@@ -215,6 +215,7 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
 
 
 
