@@ -131,26 +131,37 @@ h2 {
 }
 
 .timeline {
-  max-width: 600px;
-  margin: auto;
-  border-left: 3px solid var(--accent-color);
-  padding-left: 20px;
+  position: relative;
+  margin: 50px;
+  padding-left: 30px;
+  border-left: 2px solid #00c6d7; /* Vertical line */
 }
 
 .timeline-item {
-  margin-bottom: 1.5rem;
   position: relative;
+  margin-bottom: 40px;
 }
 
-.timeline-item::before {
-  content: "";
+.timeline-marker {
   position: absolute;
-  left: -11px;
-  top: 5px;
-  width: 15px;
-  height: 15px;
-  background: var(--accent-color);
+  left: -9px; /* Align dot with the line */
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: #00c6d7;
   border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 25px; /* Space from marker to content */
+}
+
+.timeline-date {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00c6d7;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .year {
@@ -164,3 +175,4 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
